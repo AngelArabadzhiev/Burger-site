@@ -5,6 +5,13 @@ body{
     color: #E9E3DC;
     font-family: "Bowlby One", sans-serif;
 }
+.main-navigation{
+    display: flex;
+    flex-wrap: nowrap;
+}
+ul li{
+    list-style: none;
+}
 .heading{
 
 }
