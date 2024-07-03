@@ -1,17 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap");
 
-body{
-    background-color: #1E1E1E;
-    color: #E9E3DC;
-    font-family: "Bowlby One", sans-serif;
+:root {
+  --background-color: #1e1e1e;
+  --text-color: #e9e3dc;
+  --primary-color: #d1ef53;
+  --secondary-color: #b3a0cd;
 }
-.main-navigation{
-    display: flex;
-    flex-wrap: nowrap;
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Bowlby One", sans-serif;
 }
-ul li{
-    list-style: none;
+.heading {
+  font-size: 1.875rem;
+  text-transform: uppercase;
 }
-.heading{
+.container {
+  font-size: 1.125rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 95%;
+  margin: auto;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.container .navbar {
+  justify-content: space-between;
+}
+.navbar ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
 
+.container .navbar ul li {
+  padding-right: 20px;
+  margin: 0 10px;
+}
+.order-btn {
+  background-color: var(--secondary-color);
+  font-size: 1.125rem;
+  padding: 12px 32px;
+  text-transform: uppercase;
+  font-family: "Bowlby One", sans-serif;
+  color: var(--background-color);
+}
+.landing-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6rem;
+  position: relative;
+  z-index: 2;
+  margin-top: 40px;
+}
+.landing-div {
+  margin-top: 40px;
+}
+.burgers-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
