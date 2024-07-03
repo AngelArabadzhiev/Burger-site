@@ -88,26 +88,43 @@ body {
 }
 .ad-section{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
     align-items: center;
-    width: 115em;
-    height: auto;
     color: var(--background-color);
     margin-top: 33em;
     background: var(--primary-color);
+    border-radius: 30px;
 }
 .ad-heading{
+    text-transform: uppercase;
     font-size: 4.75rem;
+    padding-left: 2em;
+    padding-right: 0.5rem;
+    line-height: 100px;
 }
 .ad-container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    margin-left: auto;
+    margin-right: auto;
+    width: 84em;
+    height: auto;
 }
 .ad-paragraph{
     font-size: 1.5rem;
+    margin-top: 34px;
+    margin-bottom: 65px;
 }
 .about-us-btn{
-
+    background-color: var(--text-color);
+    color: var(--background-color);
+    text-transform: uppercase;
+    border: 4px solid var(--background-color);
+    font-size: 1rem;
+    width: 11em;
+    height: 4em;
+    font-family: "Bowlby One", sans-serif;
 }
