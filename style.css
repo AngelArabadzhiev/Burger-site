@@ -80,7 +80,34 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: absolute; 
+    position: absolute;
     z-index: 1;
     top: 430px;
+    width: 115em;
+    height: auto;
+}
+.ad-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 115em;
+    height: auto;
+    color: var(--background-color);
+    margin-top: 33em;
+    background: var(--primary-color);
+}
+.ad-heading{
+    font-size: 4.75rem;
+}
+.ad-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.ad-paragraph{
+    font-size: 1.5rem;
+}
+.about-us-btn{
+
 }
