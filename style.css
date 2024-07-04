@@ -38,7 +38,8 @@ body {
 .container .navbar {
     justify-content: space-between;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
 
@@ -59,6 +60,7 @@ ul li{
     text-transform: uppercase;
     font-family: "Bowlby One", sans-serif;
     color: var(--background-color);
+    border: none;
 }
 
 .landing-section {
@@ -86,29 +88,29 @@ ul li{
     position: absolute;
     z-index: 1;
     top: 430px;
-    width: 92em;
+    width: 90%;
     height: auto;
 }
-.ad-section{
+
+.ad-section {
     display: flex;
     justify-content: space-between;
-    margin-left: 3rem;
-    margin-right: 3rem;
     align-items: baseline;
     color: var(--background-color);
-    margin-top: 30em;
     background: var(--primary-color);
     border-radius: 30px;
-    margin-bottom: 4rem;
+    margin: 30em 3rem 4rem;
 }
-.ad-heading{
+
+.ad-heading {
     text-transform: uppercase;
     font-size: 4.75rem;
     padding-left: 1.75em;
     padding-right: 2.5rem;
     line-height: 100px;
 }
-.ad-container{
+
+.ad-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -117,12 +119,14 @@ ul li{
     width: 84em;
     height: auto;
 }
-.ad-paragraph{
+
+.ad-paragraph {
     font-size: 1.5rem;
     margin-top: 34px;
     margin-bottom: 65px;
 }
-.about-us-btn{
+
+.about-us-btn {
     background-color: var(--text-color);
     color: var(--background-color);
     text-transform: uppercase;
@@ -132,22 +136,26 @@ ul li{
     height: 4em;
     font-family: "Bowlby One", sans-serif;
 }
-.menu-cards{
+
+.menu-cards {
     display: flex;
     justify-content: space-evenly;
 }
-.french-fries-card, .burger-card{
+
+.french-fries-card, .burger-card {
     position: relative;
     z-index: 0;
 }
-.fries-heading, .burger-heading{
+
+.fries-heading, .burger-heading {
     font-size: 1.7rem;
     padding-left: 13px;
     margin-bottom: 15px;
     padding-right: 13px;
     text-transform: uppercase;
 }
-.french-fries-container{
+
+.french-fries-container {
     background-color: var(--background-color);
     color: var(--text-color);
     position: absolute;
@@ -158,7 +166,8 @@ ul li{
     padding-bottom: 20px;
 
 }
-.burger-container{
+
+.burger-container {
     background-color: var(--background-color);
     color: var(--text-color);
     position: absolute;
@@ -168,7 +177,8 @@ ul li{
     left: 4%;
     padding-bottom: 20px;
 }
-.fries-order-btn, .burger-order-btn{
+
+.fries-order-btn, .burger-order-btn {
     margin-left: 21px;
     margin-bottom: 17px;
     background-color: var(--background-color);
@@ -176,29 +186,35 @@ ul li{
     font-size: 1.25rem;
     text-transform: uppercase;
 }
-.review-quote{
+
+.review-quote {
     display: flex;
     justify-content: center;
     font-size: 4.5rem;
     text-transform: uppercase;
     color: var(--primary-color);
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
 }
-.people-sitting-img{
+
+.people-sitting-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     z-index: 0;
+    width: 90%;
+    height: auto;
 }
-.vector-container{
+
+.vector-container {
     position: absolute;
-    top: 435%;
-    left: 0%;
+    top: 198rem;
+    left: 0;
     z-index: 1;
 }
-.moto-heading{
+
+.moto-heading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,28 +224,40 @@ ul li{
     text-align: center;
     text-transform: uppercase;
 }
-.get-started-container{
+
+.get-started-container {
     height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.get-started-btn{
+
+.get-started-btn {
     background-color: var(--primary-color);
     color: var(--background-color);
-    font-size:1.125rem ;
+    font-size: 1.125rem;
     font-family: "Bowlby One", sans-serif;
     width: 12.5rem;
     height: 3.75rem;
     text-transform: uppercase;
+    border: none;
+    margin-bottom: 7rem;
 }
-footer{
+.green-vector{
+    position: absolute;
+    z-index: 1;
+    left: 91vw;
+    bottom: -328vh;
+}
+
+footer {
     background-color: var(--secondary-color);
     color: var(--background-color);
     display: flex;
     flex-direction: column;
 }
+
 footer {
     background-color: var(--secondary-color);
     color: var(--background-color);
@@ -256,10 +284,12 @@ footer {
 .footer-section h3 {
     margin-top: 0;
 }
-.footer-section h2{
+
+.footer-section h2 {
     padding-left: 30px;
 }
-.small-text{
+
+.small-text {
     font-size: 1.125rem;
     font-weight: lighter;
 }
@@ -292,11 +322,37 @@ footer {
 
 .footer-section button {
     padding: 10px;
-    background-color:transparent;
+    background-color: transparent;
     color: var(--background-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.email-form{
+    position: relative;
+    display: inline-block;
+
+}
+.email-form input {
+    padding-right: 30px;
+    background-color: transparent;
+}
+.footer-section input[type="email"], .footer-section input[type="email"]:hover, .footer-section input[type="email"]:focus {
+    border-color: var(--background-color);
+}
+.submit{
+    position: absolute;
+    top: 5px;
+    padding-bottom: 12px;
+    left: 344px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: "Bowlby One", sans-serif;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
 }
 
 .footer-bottom {
