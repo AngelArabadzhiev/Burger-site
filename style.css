@@ -48,6 +48,12 @@ ul li {
     text-transform: uppercase;
 }
 
+.about-us-btn-landing, .menu-btn {
+    color: var(--text-color);
+    text-decoration: none;
+
+
+}
 .container .navbar ul li {
     padding-right: 20px;
     margin: 0 10px;
@@ -61,13 +67,14 @@ ul li {
     font-family: "Bowlby One", sans-serif;
     color: var(--background-color);
     border: none;
+    text-decoration: none;
 }
 
 .landing-section {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    position: relative; /* Needed to position items absolutely */
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .landing-heading {
@@ -179,12 +186,14 @@ ul li {
 }
 
 .fries-order-btn, .burger-order-btn {
-    margin-left: 21px;
+    margin-left: 20px;
     margin-bottom: 17px;
     background-color: var(--background-color);
     color: var(--secondary-color);
     font-size: 1.25rem;
     text-transform: uppercase;
+    border: none;
+    font-family: "Bowlby One", sans-serif;
 }
 
 .review-quote {
@@ -244,7 +253,8 @@ ul li {
     border: none;
     margin-bottom: 7rem;
 }
-.green-vector{
+
+.green-vector {
     position: absolute;
     z-index: 1;
     left: 91vw;
@@ -328,19 +338,22 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
-.email-form{
+
+.email-form {
     position: relative;
     display: inline-block;
-
 }
+
 .email-form input {
     padding-right: 30px;
     background-color: transparent;
 }
+
 .footer-section input[type="email"], .footer-section input[type="email"]:hover, .footer-section input[type="email"]:focus {
     border-color: var(--background-color);
 }
-.submit{
+
+.submit {
     position: absolute;
     top: 5px;
     padding-bottom: 12px;
@@ -359,7 +372,6 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-
 }
 
 .footer-bottom p {
