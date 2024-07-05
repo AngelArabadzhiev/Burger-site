@@ -5,6 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Burger Heaven</title>
   <link href="style.css" rel="stylesheet"/>
+  <script src="scripts.js"></script>
 </head>
 <body>
 <header>
@@ -13,10 +14,10 @@
       <h1 class="heading">Burger heaven</h1>
       <nav class="main-navigation">
         <ul class="nav-btns">
-          <li>About us</li>
-          <li>Menu</li>
+          <li><a class="about-us-btn-landing" href="">About us</a></li>
+          <li><a class="menu-btn" href="#menu">Menu</a></li>
           <li>
-            <button class="order-btn">Order online</button>
+            <a class="order-btn" href="#menu">Order online</a>
           </li>
         </ul>
       </nav>
@@ -42,10 +43,10 @@
         Lorem ipsum dolor sit amet, consectetur <br/>
         adipiscing elit. Aenean nec ornare neque.
       </p>
-      <button class="about-us-btn">About us</button>
+      <button class="about-us-btn" onclick="">About us</button>
     </div>
   </section>
-  <section class="menu-cards">
+  <section class="menu-cards" id="menu">
     <article class="french-fries-card">
       <img alt="" src="/images/French-fries.png"/>
       <div class="french-fries-container">
@@ -53,7 +54,7 @@
           Salt & vinegar <br/>
           french fries
         </h4>
-        <a class="fries-order-btn">Order online</a>
+        <button class="fries-order-btn">Order online</button>
       </div>
     </article>
     <article class="burger-card">
@@ -63,7 +64,7 @@
           Crispy chicken <br/>
           sandwich
         </h4>
-        <a class="burger-order-btn">Order online</a>
+        <button class="burger-order-btn">Order online</button>
       </div>
     </article>
   </section>
@@ -84,9 +85,9 @@
       come visit today
     </h2>
     <div class="get-started-container">
-      <button class="get-started-btn">Get started</button>
+      <button class="get-started-btn" onclick="">Get started</button>
     </div>
-    <img alt="" src="/images/Green-vector.png" class="green-vector"/>
+    <img alt="" class="green-vector" src="/images/Green-vector.png"/>
   </section>
 </main>
 <footer>
@@ -111,8 +112,8 @@
     <div class="footer-section">
       <h3>JOIN OUR NEWSLETTER</h3>
       <form action="#" class="email-form">
-        <input  required type="email" />
-        <input type="button" value="submit" class="submit">
+        <input required type="email" id="email"/>
+        <input class="submit" type="button" value="submit">
       </form>
     </div>
   </div>
